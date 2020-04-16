@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8266652160745223362}
   - component: {fileID: 8266652160745223366}
   - component: {fileID: 365787614512982598}
-  m_Layer: 0
-  m_Name: Popcorn 1
+  m_Layer: 11
+  m_Name: Popcorn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,8 +95,8 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &8266652160745223366
 CircleCollider2D:
@@ -137,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8266652160763383005}
   - component: {fileID: 8266652160763382946}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Moln
   m_TagString: Untagged
   m_Icon: {fileID: 0}
