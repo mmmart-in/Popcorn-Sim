@@ -15,7 +15,7 @@ public class Popcorn : MonoBehaviour
     {
         circleCollider = GetComponent<CircleCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
-        upwardsForce = Random.Range(5, 10);
+        upwardsForce = Random.Range(10, 15);
         rb2d.AddForce(new Vector2(Random.Range(-2, 2), upwardsForce), ForceMode2D.Impulse);
     }
 

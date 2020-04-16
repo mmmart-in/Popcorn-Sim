@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Stekpanna : MonoBehaviour
 {
+    public static Stekpanna stekpannaInstance;
     public Transform startPosition;
     public Transform mid;
     public float distanceToFire;
@@ -16,8 +17,10 @@ public class Stekpanna : MonoBehaviour
     private SpriteRenderer sr;
     private Rigidbody2D rb;
 
+
     void Start()
     {
+        stekpannaInstance = this;
         canPop = false;
         transform.position = startPosition.position;
         sr = GetComponent<SpriteRenderer>();
@@ -49,6 +52,7 @@ public class Stekpanna : MonoBehaviour
         distanceToFire = Vector3.Distance(pan.transform.position, fire.transform.position);
     }
 
+
     void Grab()
     {
         Touch touch = Input.GetTouch(0);
@@ -76,16 +80,15 @@ public class Stekpanna : MonoBehaviour
         {
             sr.flipX = false;
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector3(touchPosition.x - panAdjustRightHand, touchPosition.y);
-            touchPosition.z = 15;
+            transform.position = new Vector3(touchPosition.x - panAdjustRightHand, touchPosition.y, 15);
         }
         else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < mid.position.x)
         {
 
             sr.flipX = true;
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector3(touchPosition.x + panAdjustLeftHand, touchPosition.y);
-            touchPosition.z = 15;
+            transform.position = new Vector3(touchPosition.x + panAdjustLeftHand, touchPosition.y, 15);
+
 
         }
     }
