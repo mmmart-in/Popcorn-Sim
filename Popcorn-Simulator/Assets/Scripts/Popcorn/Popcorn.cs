@@ -19,10 +19,13 @@ public class Popcorn : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Killzone"))
+        {
             Destroy(gameObject);
+            //minuspoäng appliceras här?
+        }
+            
         if (other.CompareTag("Player"))
         {
-         
             Destroy(gameObject);
         }
     }
