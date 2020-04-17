@@ -11,6 +11,7 @@ public class PopcornSpawner : MonoBehaviour
     public float xPos;
     public float yPos;
 
+    private float OffsetYpos = 0.3f;
     private float popcornSpawnNumber;
     private int randomAngle;
     private float panRadius = 0.4f;
@@ -20,7 +21,7 @@ public class PopcornSpawner : MonoBehaviour
     {
         randomPopcorn = Random.Range(0, popcornArray.Length);
         xPos = Random.Range(stekpanna.transform.position.x - panRadius, stekpanna.transform.position.x + panRadius);
-        yPos = transform.position.y;
+        yPos = transform.position.y + OffsetYpos;
         randomAngle = Random.Range(-45, 45);
         
         popcornSpawnNumber = Random.Range(1, 100) / Stekpanna.stekpannaInstance.distanceToFire;

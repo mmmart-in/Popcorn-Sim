@@ -5,6 +5,7 @@ using UnityEngine;
 public class Stekpanna : MonoBehaviour
 {
     public static Stekpanna stekpannaInstance;
+    public GameController gamecontroller;
     public Transform startPosition;
     public Transform mid;
     public float distanceToFire;
@@ -14,8 +15,6 @@ public class Stekpanna : MonoBehaviour
     public GameObject pan;
     public GameObject fire;
 
-    
-    private SpriteRenderer sr;
     private Rigidbody2D rb;
 
 
@@ -24,7 +23,6 @@ public class Stekpanna : MonoBehaviour
         stekpannaInstance = this;
         canPop = false;
         //transform.position = startPosition.position;
-        sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -69,5 +67,13 @@ public class Stekpanna : MonoBehaviour
         rb.velocity = new Vector3(touchPosition.x * moveSpeed, offsetY + touchPosition.y * moveSpeed, 15);
     }
 
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Popcorn"))
+        {
+            gamecontroller.CatchPopcorn();
+        }
+    }
+
+
 }
