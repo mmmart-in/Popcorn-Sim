@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     
-    public int popCounterThisLevel;
+    public int cornCounterThisLevel;
+    public Text cornCounterText;
 
     /*public GameObject eld;
     public GameObject popcorn;
@@ -21,6 +23,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
+        cornCounterText.text = "" + cornCounterThisLevel;
 
         /*distance = Vector3.Distance(stekpanna.transform.position, eld.transform.position);
 
@@ -41,7 +44,7 @@ public class GameController : MonoBehaviour
 
     public void CatchPopcorn()
     {
-        popCounterThisLevel++;
+        cornCounterThisLevel++;
     }
 
 
