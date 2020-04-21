@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Killzone
-  - Popcorn
   layers:
   - Default
   - TransparentFX
@@ -18,7 +17,7 @@ TagManager:
   - Wall
   - Floor
   - Player
-  - Popcorn
+  - 
   - 
   - 
   - 
