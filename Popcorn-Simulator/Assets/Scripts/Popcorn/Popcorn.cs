@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Popcorn : MonoBehaviour
 {   
-    private float upwardsForce;
+    private float upwards;
     private Rigidbody2D rb2d;
     
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        upwardsForce = Random.Range(10, 15);
-        rb2d.AddForce(new Vector2(Random.Range(-2, 2), upwardsForce), ForceMode2D.Impulse);
+        upwards = Random.Range(10, 15);
+        rb2d.AddForce(new Vector2(Random.Range(-2, 2), upwards), ForceMode2D.Impulse);
         
     }
 
