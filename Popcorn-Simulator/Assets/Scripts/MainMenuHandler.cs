@@ -8,6 +8,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public GameObject credits;
     public GameObject mainMenu;
+    public GameObject howToPlay;
 
     public void PlayGame()
     {
@@ -16,19 +17,23 @@ public class MainMenuHandler : MonoBehaviour
 
     public void HowToPlay()
     {
-        SceneManager.LoadScene(2);
+        ChangeActiveScene(mainMenu, howToPlay);
     }
 
     public void Credits()
     {
-        mainMenu.SetActive(false);
-        credits.SetActive(true);
+        ChangeActiveScene(mainMenu, credits);
     }
 
     public void BackFromCredits()
     {
-        credits.SetActive(false);
-        mainMenu.SetActive(true);
+        ChangeActiveScene(credits, mainMenu);
+    }
+
+    public void ChangeActiveScene(GameObject toTurnFalse, GameObject toTurnTrue)
+    {
+        toTurnFalse.SetActive(false);
+        toTurnTrue.SetActive(true);
     }
 
 }
