@@ -363,8 +363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56626d1b8659ace478eef43fa378b86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  credits: {fileID: 0}
-  mainMenu: {fileID: 0}
 --- !u!1 &359054351
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,8 +783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000038146973, y: -0.13714981}
-  m_SizeDelta: {x: 256.08, y: 133.29}
+  m_AnchoredPosition: {x: -11.8, y: 12}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893409874
 MonoBehaviour:
@@ -854,7 +852,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -875,7 +873,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.1572876, y: -3.234436, z: 3.196106, w: -4.305605}
+  m_margin: {x: -95.55524, y: 0, z: -157.12396, w: -124.40857}
   m_textInfo:
     textComponent: {fileID: 893409874}
     characterCount: 5
@@ -961,8 +959,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56626d1b8659ace478eef43fa378b86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  credits: {fileID: 1620250807}
-  mainMenu: {fileID: 910886089}
 --- !u!1 &1054306310
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,8 +993,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000076293945, y: -0.00012111664}
-  m_SizeDelta: {x: 354.9, y: 134.8}
+  m_AnchoredPosition: {x: -9.535349, y: 12.0000305}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1054306312
 MonoBehaviour:
@@ -1087,7 +1083,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -3.9556885, y: -0.3586468, z: 0.7893677, w: 1.1463151}
+  m_margin: {x: -430.33032, y: 0, z: -489.54138, w: -126.76611}
   m_textInfo:
     textComponent: {fileID: 1054306312}
     characterCount: 8
@@ -1255,7 +1251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Button
 --- !u!222 &1209443302
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1953,18 +1949,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2031261859}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 910886091}
-        m_MethodName: BackFromCredits
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2031261859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,8 +2103,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000076293945, y: -0.00000667572}
-  m_SizeDelta: {x: 708.61, y: 134.8}
+  m_AnchoredPosition: {x: -5.652424, y: 12.000015}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2145441281
 MonoBehaviour:
@@ -2208,7 +2193,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.2302788, y: -0.5869205, z: -0.84417546, w: 0.276854}
+  m_margin: {x: -430.33032, y: 0, z: -489.54138, w: -126.76611}
   m_textInfo:
     textComponent: {fileID: 2145441281}
     characterCount: 12
