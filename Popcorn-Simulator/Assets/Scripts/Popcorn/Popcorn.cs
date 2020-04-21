@@ -10,6 +10,7 @@ public class Popcorn : MonoBehaviour
 
     void Start()
     {
+        SoundManager.PlaySound("popcorn");
         rb2d = GetComponent<Rigidbody2D>();
         upwards = Random.Range(10, 15);
         rb2d.AddForce(new Vector2(Random.Range(-2, 2), upwards), ForceMode2D.Impulse);
