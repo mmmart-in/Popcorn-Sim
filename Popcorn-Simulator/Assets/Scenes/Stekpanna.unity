@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221349141}
   - component: {fileID: 221349142}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeatZone
   m_TagString: HeatZone
   m_Icon: {fileID: 0}
@@ -969,6 +969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spisplatta
       objectReference: {fileID: 0}
+    - target: {fileID: 5712102245773079011, guid: 338b2c0a9d8cbdc4dba0c9b4137d96e6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5712102245773079013, guid: 338b2c0a9d8cbdc4dba0c9b4137d96e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1023,6 +1028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712102247212608447, guid: 338b2c0a9d8cbdc4dba0c9b4137d96e6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338b2c0a9d8cbdc4dba0c9b4137d96e6, type: 3}
