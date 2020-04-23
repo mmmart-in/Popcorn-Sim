@@ -20,8 +20,8 @@ public class PopcornSpawner : MonoBehaviour
         yPos = transform.position.y;
         randomAngle = Random.Range(-45, 45);
         
-        popcornSpawnNumber = Random.Range(1, 10) / Stekpanna.stekpannaInstance.distanceToFire;
-        if (popcornSpawnNumber > 9)
+        popcornSpawnNumber = Random.Range(2, 20) * Stekpanna.stekpannaInstance.distanceToFire;
+        if (popcornSpawnNumber < 3)
             Instantiate(popcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
     }
 
