@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Killzone
   - Popcorn
+  - HeatZone
+  - BurntPopcorn
   layers:
   - Default
   - TransparentFX

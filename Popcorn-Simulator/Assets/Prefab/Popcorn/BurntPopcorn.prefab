@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8266652160745223421
+--- !u!1 &8492361435784217429
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8266652160745223361}
-  - component: {fileID: 8266652160745223360}
-  - component: {fileID: 8266652160745223362}
-  - component: {fileID: 8266652160745223366}
-  - component: {fileID: 365787614512982598}
-  - component: {fileID: 6071984368577175045}
+  - component: {fileID: 8492361435784217449}
+  - component: {fileID: 8492361435784217448}
+  - component: {fileID: 8492361435784217450}
+  - component: {fileID: 8492361435784217454}
+  - component: {fileID: 175754777433644526}
+  - component: {fileID: 5992009001142741421}
   m_Layer: 11
-  m_Name: Popcorn 4
-  m_TagString: Popcorn
+  m_Name: BurntPopcorn
+  m_TagString: BurntPopcorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8266652160745223361
+--- !u!224 &8492361435784217449
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8266652160745223421}
+  m_GameObject: {fileID: 8492361435784217429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -37,25 +37,25 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.43, y: 0.35}
+  m_AnchoredPosition: {x: 1.0581084, y: 3.7366848}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8266652160745223360
+--- !u!222 &8492361435784217448
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8266652160745223421}
+  m_GameObject: {fileID: 8492361435784217429}
   m_CullTransparentMesh: 0
---- !u!50 &8266652160745223362
+--- !u!50 &8492361435784217450
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8266652160745223421}
+  m_GameObject: {fileID: 8492361435784217429}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -69,13 +69,13 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &8266652160745223366
+--- !u!58 &8492361435784217454
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8266652160745223421}
+  m_GameObject: {fileID: 8492361435784217429}
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
@@ -85,13 +85,13 @@ CircleCollider2D:
   m_Offset: {x: -0.0067460537, y: -0.017238379}
   serializedVersion: 2
   m_Radius: 0.14330864
---- !u!114 &365787614512982598
+--- !u!114 &175754777433644526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8266652160745223421}
+  m_GameObject: {fileID: 8492361435784217429}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bea9156152a6584ab2b3f6c2e824cd7, type: 3}
@@ -99,13 +99,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerReset: 0.2
   timer: 0
---- !u!212 &6071984368577175045
+--- !u!212 &5992009001142741421
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8266652160745223421}
+  m_GameObject: {fileID: 8492361435784217429}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -138,8 +138,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dcd8a533797dba346994a65b1eb24da7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fe1e627a7e392df47b23e703603793c1, type: 3}
+  m_Color: {r: 0.09433961, g: 0.00756497, b: 0.00756497, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
