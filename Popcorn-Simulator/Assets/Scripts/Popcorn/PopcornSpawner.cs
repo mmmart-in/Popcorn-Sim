@@ -5,7 +5,7 @@ using UnityEngine;
 public class PopcornSpawner : MonoBehaviour
 {
     public GameObject stekpanna;
-    public GameObject popcorn;
+    public GameObject [] popcorn;
     public GameObject burntPopcorn;
 
     public float xPos;
@@ -23,9 +23,6 @@ public class PopcornSpawner : MonoBehaviour
 
         
         popcornSpawnNumber = Random.Range(2, 20) * Stekpanna.stekpannaInstance.distanceToFire;
-        if (popcornSpawnNumber < 3)
-            Instantiate(popcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
-
 
         popcornSpawnNumber = Random.Range(2, 20) * Stekpanna.stekpannaInstance.distanceToFire;
         if (popcornSpawnNumber < 3)
@@ -38,7 +35,7 @@ public class PopcornSpawner : MonoBehaviour
             else
             {
                 SoundManager.PlaySound("popcorn");
-                Instantiate(popcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
+                Instantiate(popcorn[Random.Range(0, 6)], new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
             }
                 
 

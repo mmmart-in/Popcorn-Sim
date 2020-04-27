@@ -910,6 +910,47 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: popcorn.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: popcorn.Array.data[0]
+      value: 
+      objectReference: {fileID: 8266652160745223421, guid: d240ffe731e45fe4a9a4d41d3a3c5781,
+        type: 3}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: popcorn.Array.data[1]
+      value: 
+      objectReference: {fileID: 8266652160745223421, guid: 589635f3cf3002640acd36a17242b8af,
+        type: 3}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: popcorn.Array.data[2]
+      value: 
+      objectReference: {fileID: 8266652160745223421, guid: d9b032824878f47439e79a5f946a2ba6,
+        type: 3}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: popcorn.Array.data[3]
+      value: 
+      objectReference: {fileID: 8266652160745223421, guid: 9be7a8dda8a7e204d9f6387450d51386,
+        type: 3}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: popcorn.Array.data[4]
+      value: 
+      objectReference: {fileID: 8266652160745223421, guid: 40c65fbedefa42540bf0b758de541832,
+        type: 3}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: popcorn.Array.data[5]
+      value: 
+      objectReference: {fileID: 8266652160745223421, guid: 0052975df56153b4897336a02521e3cc,
+        type: 3}
     - target: {fileID: 5017068695603114553, guid: ef56f8625d5232049bcc6729ab1c35ed,
         type: 3}
       propertyPath: m_Name
