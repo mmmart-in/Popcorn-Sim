@@ -5,7 +5,7 @@ using UnityEngine;
 public class PopcornSpawner : MonoBehaviour
 {
     public GameObject stekpanna;
-    public GameObject popcorn;
+    public GameObject [] popcorn;
     public GameObject burntPopcorn;
 
     public float xPos;
@@ -26,7 +26,7 @@ public class PopcornSpawner : MonoBehaviour
             if (BurntPopcornSpawner.burntInstance.getHeat() * Random.Range(1, 5) > 10)
                 Instantiate(burntPopcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
             else
-                Instantiate(popcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
+                Instantiate(popcorn[Random.Range(0, 6)], new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
     }
 
 
