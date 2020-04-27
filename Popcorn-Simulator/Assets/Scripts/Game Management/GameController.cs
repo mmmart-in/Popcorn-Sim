@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 
     public int cornCounterThisLevel;
     public Text cornCounterText;
+    public Text timerText;
 
     [Header("Timer")]
     public float timer = 60;
@@ -16,12 +17,17 @@ public class GameController : MonoBehaviour
     
     void Start()
     {
-
+        timerText.text = "";
     }
 
 
     void Update()
     {
+        if(timer < 11)
+        {
+            timerText.text = "" + (int)timer;
+        }
+        
         cornCounterText.text = "" + cornCounterThisLevel;
 
         timer -= Time.deltaTime;
@@ -43,7 +49,7 @@ public class GameController : MonoBehaviour
 
     private void TimeRanOut()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
