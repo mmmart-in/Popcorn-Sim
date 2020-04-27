@@ -12,7 +12,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Stekpanna");
     }
 
     public void HowToPlay()
