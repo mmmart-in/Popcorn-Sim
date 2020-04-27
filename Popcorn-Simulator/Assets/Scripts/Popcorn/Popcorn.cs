@@ -14,7 +14,7 @@ public class Popcorn : MonoBehaviour
 
     void Start()
     {
-        SoundManager.PlaySound("popcorn");
+        
         rb2d = GetComponent<Rigidbody2D>();
         circle = GetComponent<CircleCollider2D>();
         upwards = Random.Range(10, 15);

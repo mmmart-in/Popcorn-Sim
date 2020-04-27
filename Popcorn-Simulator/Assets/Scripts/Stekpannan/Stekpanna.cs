@@ -15,7 +15,17 @@ public class Stekpanna : MonoBehaviour
     public GameObject pan;
     public GameObject fire;
 
+    public List<GameObject> pops = new List<GameObject>();
+    public AudioClip[] catchSounds;
+
+
     private Rigidbody2D rb;
+    private AudioSource audSrc;
+
+    private int lastCatch;
+    private float catchTimer;
+    private float timerLength = 1.5f;
+
 
 
     void Start()
@@ -24,6 +34,10 @@ public class Stekpanna : MonoBehaviour
         canPop = false;
         //transform.position = startPosition.position;
         rb = GetComponent<Rigidbody2D>();
+        audSrc = GetComponent<AudioSource>();
+
+        catchTimer = timerLength;
+
     }
 
 
@@ -46,6 +60,23 @@ public class Stekpanna : MonoBehaviour
             GrabWithMouse();
         }
         distanceToFire = Vector3.Distance(pan.transform.position, fire.transform.position);
+
+
+        if (catchTimer <= 0 && pops.Count == lastCatch)
+        {
+            pops.Clear();
+            catchTimer = timerLength;
+            lastCatch = 0;
+
+
+        }
+
+        if (pops.Count > 0)
+        {
+            catchTimer -= Time.deltaTime;
+        }
+
+
     }
 
 
@@ -58,7 +89,7 @@ public class Stekpanna : MonoBehaviour
         {
             rb.velocity = new Vector3(0, 0, 15);
         }
-        //touchPosition.z = 15;
+
     }
 
     void GrabWithMouse()
@@ -71,7 +102,34 @@ public class Stekpanna : MonoBehaviour
     {
         if (collision.CompareTag("Popcorn"))
         {
+
+            //Add popcorn to pops
+            pops.Add(collision.gameObject);
+
+
+
+            //Reset Timer
+            catchTimer = timerLength;
+
+            //Play correct sound
+            if (lastCatch < 8)
+            {
+                AudioClip clipToPlay = catchSounds[lastCatch];
+                audSrc.PlayOneShot(clipToPlay, 0.6f);
+            }
+            else if (lastCatch >= 8)
+            {
+                audSrc.PlayOneShot(catchSounds[7], 0.6f);
+            }
+
+
             gamecontroller.CatchPopcorn();
+            lastCatch++;
+        }
+
+        if (collision.CompareTag("BurntPopcorn"))
+        {
+            SoundManager.PlaySound("burntCatch");
         }
     }
 

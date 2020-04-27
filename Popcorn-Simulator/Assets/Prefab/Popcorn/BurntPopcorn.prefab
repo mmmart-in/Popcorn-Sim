@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 175754777433644526}
   - component: {fileID: 5992009001142741421}
   m_Layer: 11
-  m_Name: Popcorn 6
-  m_TagString: Popcorn
+  m_Name: BurntPopcorn
+  m_TagString: BurntPopcorn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

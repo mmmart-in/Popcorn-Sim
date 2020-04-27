@@ -24,9 +24,17 @@ public class PopcornSpawner : MonoBehaviour
         popcornSpawnNumber = Random.Range(2, 20) * Stekpanna.stekpannaInstance.distanceToFire;
         if (popcornSpawnNumber < 3)
             if (BurntPopcornSpawner.burntInstance.getHeat() * Random.Range(1, 5) > 10)
+            {
+                SoundManager.PlaySound("burnedPopcorn");
                 Instantiate(burntPopcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
+            }
+
             else
+            {
+                SoundManager.PlaySound("popcorn");
                 Instantiate(popcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
+            }
+                
     }
 
 
