@@ -20,11 +20,11 @@ public class GameControl : MonoBehaviour
     }
         public void updatePopcornCount(int popcorn) {
         popcornCount += popcorn;
-        SaveSystem.SaveData(popcornCount);
+        Save();
     }
 
     public void Save() {
-        SaveSystem.SaveData(popcornCount);
+        SaveSystem.SaveData(new SaveDataContainer(popcornCount));
     }
     public void Load()
     {

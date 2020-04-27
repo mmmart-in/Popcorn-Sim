@@ -7,13 +7,13 @@ public static class SaveSystem {
     var enklast att göra det med en enkel int i SavePlayerData:s konstruktor
     i debugging-syfte..
     */
-    public static void SaveData (int currency)
+    public static void SaveData (SaveDataContainer dataContainer)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/player.save";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SavePlayerData data = new SavePlayerData(currency);
+        SavePlayerData data = new SavePlayerData(dataContainer);
 
         formatter.Serialize(stream, data);
         stream.Close();
