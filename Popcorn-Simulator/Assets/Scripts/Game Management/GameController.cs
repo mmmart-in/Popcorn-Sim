@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
+    public static GameController gameController;
 
     public int cornCounterThisLevel;
     public Text cornCounterText;
@@ -16,7 +17,7 @@ public class GameController : MonoBehaviour
     
     void Start()
     {
-
+        gameController = this;
     }
 
 
