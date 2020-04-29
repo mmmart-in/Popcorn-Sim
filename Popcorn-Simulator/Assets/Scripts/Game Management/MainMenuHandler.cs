@@ -9,10 +9,11 @@ public class MainMenuHandler : MonoBehaviour
     public GameObject credits;
     public GameObject mainMenu;
     public GameObject howToPlay;
+    public GameObject scenarioChoice;
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Stekpanna");
+        ChangeActiveScene(mainMenu, scenarioChoice);
     }
 
     public void HowToPlay()
@@ -28,6 +29,11 @@ public class MainMenuHandler : MonoBehaviour
     public void BackFromCredits()
     {
         ChangeActiveScene(credits, mainMenu);
+    }
+
+    public void BackFromScenarioChoice()
+    {
+        ChangeActiveScene(scenarioChoice, mainMenu);
     }
 
     public void ChangeActiveScene(GameObject toTurnFalse, GameObject toTurnTrue)
