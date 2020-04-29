@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &176066121 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3403668608301029472, guid: e225a7fafea21ef468f9e1756a7d474c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4049271178975725363}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &283676241 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4049271179259398498, guid: e225a7fafea21ef468f9e1756a7d474c,
@@ -344,6 +356,16 @@ PrefabInstance:
       propertyPath: cornCounterText
       value: 
       objectReference: {fileID: 283676241}
+    - target: {fileID: 14181382965220168, guid: 9e96eba09c767fe479c687454b2571f7,
+        type: 3}
+      propertyPath: timer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 14181382965220168, guid: 9e96eba09c767fe479c687454b2571f7,
+        type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 176066121}
     - target: {fileID: 14181382965220170, guid: 9e96eba09c767fe479c687454b2571f7,
         type: 3}
       propertyPath: m_Name
