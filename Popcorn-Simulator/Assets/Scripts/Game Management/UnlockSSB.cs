@@ -6,6 +6,6 @@ public class UnlockSSB : MonoBehaviour
 {
     int i = 1; 
     public void Unlock() {
-        GameControl.gameControl.Unlock(i);
+        GameControl.gameControl.ToggleUnlocked(i);
     }
 }

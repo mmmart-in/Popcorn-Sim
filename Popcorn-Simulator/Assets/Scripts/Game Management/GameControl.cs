@@ -31,12 +31,12 @@ public class GameControl : MonoBehaviour
         Save();
     }
 
-    public void Unlock(int scenarioNum) {
-        scenariosUnlocked[scenarioNum] = true;
-        Debug.Log(scenariosUnlocked[1]);
+    public void ToggleUnlocked(int scenarioNum) {
+        scenariosUnlocked[scenarioNum] = !scenariosUnlocked[scenarioNum];
         Save();
         Load();
     }
+
 
     public void Save() {
         SaveSystem.SaveData(new SaveDataContainer(popcornCount, scenariosUnlocked));
