@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
 
     private void TimeRanOut()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Main Menu");
     }
 
 

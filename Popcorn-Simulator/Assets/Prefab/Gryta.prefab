@@ -105,7 +105,7 @@ MonoBehaviour:
   startPosition: {fileID: 0}
   mid: {fileID: 5017068696135416281}
   distanceToFire: 0
-  moveSpeed: 30
+  moveSpeed: 35
   offsetY: 10
   canPop: 0
   pan: {fileID: 5017068695603114553}

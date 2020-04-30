@@ -85,7 +85,7 @@ public class Stekpanna : MonoBehaviour
         Touch touch = Input.GetTouch(0);
         Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position) - transform.position;
         rb.velocity = new Vector3(touchPosition.x * moveSpeed, offsetY + touchPosition.y * moveSpeed, 15);
-        if (transform.position.x - touchPosition.x < 0.5f)
+        if (transform.position.x - touchPosition.x < 0.5f || transform.position.y - touchPosition.y < 0.5f)
         {
             rb.velocity = new Vector3(0, 0, 15);
         }
@@ -96,6 +96,7 @@ public class Stekpanna : MonoBehaviour
     {
         Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         rb.velocity = new Vector3(touchPosition.x * moveSpeed, offsetY + touchPosition.y * moveSpeed, 15);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -6,17 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Stekpanna.unity
-    guid: d07300324d389944dab1219b3d3eaec1
-  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 023bee91fd0bdf64daf7e76300fdbf20
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: 
-    guid: 4e8a1adea886f7947a2382c692d58ae0
+    path: Assets/Scenes/Kitchen.unity
+    guid: d07300324d389944dab1219b3d3eaec1
+  - enabled: 1
+    path: Assets/Scenes/PARK.unity
+    guid: ae32053e2c0a2604a8c0db7522e55917
   - enabled: 1
     path: Assets/Scenes/Beach.unity
     guid: 06dc4456423663843997d7f343f488b1
