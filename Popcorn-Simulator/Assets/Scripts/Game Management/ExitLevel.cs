@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ExitLevel : MonoBehaviour
 {
     public void ExitToMainMenu() {
-        GameControl.gameControl.updatePopcornCount(GameController.gameController.cornCounterThisLevel);
+        GameControl.gameControl.UpdatePopcornCount(GameController.gameController.cornCounterThisLevel);
         SceneManager.LoadScene("Main Menu");
     }
 }

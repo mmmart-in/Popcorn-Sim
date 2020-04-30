@@ -7,7 +7,7 @@ public class ScenarioChoice : MonoBehaviour
 {
     public void HomeSweetHome()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     public void SweetSummerBreeze()

@@ -7,7 +7,7 @@ public class BackFromScenario : MonoBehaviour
 {
 
     public void Back() {
-        GameControl.gameControl.Save();
+        GameControl.gameControl.UpdatePopcornCount(GameController.gameController.cornCounterThisLevel);
         SceneManager.LoadScene("Main Menu");
     }
 }
