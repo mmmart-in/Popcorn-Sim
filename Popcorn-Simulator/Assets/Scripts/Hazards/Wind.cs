@@ -12,6 +12,7 @@ public class Wind : MonoBehaviour
     private Rigidbody2D rb;
     void Start()
     {
+        SoundManager.PlaySound("Wind");
         rightMove = moveSpeed;
         leftMove -= moveSpeed;
         windEffect = GetComponent<AreaEffector2D>();

@@ -854,6 +854,51 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398498, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398499, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6327119
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398499, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.52725995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398499, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.52725995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398499, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 404.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398499, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 41.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398499, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 479.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049271179259398499, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.700012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556008243291635759, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 475.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e225a7fafea21ef468f9e1756a7d474c, type: 3}
 --- !u!1001 &4474759689706753091
