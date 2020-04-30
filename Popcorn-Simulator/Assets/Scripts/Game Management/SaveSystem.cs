@@ -3,7 +3,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
 public static class SaveSystem { 
-
+    /*SaveData kommer behöva ta en container-klass med data i framtiden,
+    var enklast att göra det med en enkel int i SavePlayerData:s konstruktor
+    i debugging-syfte..
+    */
     public static void SaveData (SaveDataContainer dataContainer)
     {
         BinaryFormatter formatter = new BinaryFormatter();

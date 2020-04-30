@@ -311,13 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stekpanna: {fileID: 5017068695603114553}
-  popcorn:
-  - {fileID: 8266652160745223421, guid: d240ffe731e45fe4a9a4d41d3a3c5781, type: 3}
-  - {fileID: 8266652160745223421, guid: 589635f3cf3002640acd36a17242b8af, type: 3}
-  - {fileID: 8266652160745223421, guid: d9b032824878f47439e79a5f946a2ba6, type: 3}
-  - {fileID: 8266652160745223421, guid: 9be7a8dda8a7e204d9f6387450d51386, type: 3}
-  - {fileID: 8266652160745223421, guid: 40c65fbedefa42540bf0b758de541832, type: 3}
-  - {fileID: 8266652160745223421, guid: 0052975df56153b4897336a02521e3cc, type: 3}
+  popcorn: {fileID: 8266652160745223421, guid: 0052975df56153b4897336a02521e3cc, type: 3}
   burntPopcorn: {fileID: 8492361435784217429, guid: d038f7d73ca790a4eb5bc0e5161963e9,
     type: 3}
   xPos: 0
