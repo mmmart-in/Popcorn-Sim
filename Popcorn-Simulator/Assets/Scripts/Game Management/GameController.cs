@@ -32,6 +32,12 @@ public class GameController : MonoBehaviour
         
         cornCounterText.text = "" + cornCounterThisLevel;
 
+        if(timer < 11)
+        {
+            timerText.text = "" + (int)timer;
+        }
+        
+
         timer -= Time.deltaTime;
         if(timer <= 0)
         {
@@ -51,7 +57,7 @@ public class GameController : MonoBehaviour
 
     private void TimeRanOut()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Main Menu");
     }
 
 

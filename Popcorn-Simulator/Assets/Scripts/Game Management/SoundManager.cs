@@ -14,6 +14,7 @@ public class SoundManager : MonoBehaviour
         popcorn = Resources.Load<AudioClip>("popcorn");
         burnedPopcorn = Resources.Load<AudioClip>("burnedPopcorn");
         burntCatch = Resources.Load<AudioClip>("burntPopcornCatch");
+        wind = Resources.Load<AudioClip>("Wind");
     }
 
     public static void PlaySound(string clip)
@@ -33,6 +34,12 @@ public class SoundManager : MonoBehaviour
                 //audSrc.pitch = Random.Range(0.8f, 1f);
                 audSrc.PlayOneShot(burntCatch, 1.3f);
                 break;
+
+            case "Wind":
+                //audSrc.pitch = Random.Range(0.8f, 1f);
+                audSrc.PlayOneShot(wind, 0.2f);
+                break;
+
 
 
         }
