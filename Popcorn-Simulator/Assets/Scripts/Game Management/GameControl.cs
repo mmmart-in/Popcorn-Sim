@@ -49,7 +49,6 @@ public class GameControl : MonoBehaviour
         scenariosUnlocked = newArray;
         Save();
     }
-
     public void ToggleUnlocked(int scenarioNum) {
         scenariosUnlocked[scenarioNum] = !scenariosUnlocked[scenarioNum];
         Save();
