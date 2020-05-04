@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Popcorn-Simulator/Assets/Scenes/PARK.unity.meta
 guid: ae32053e2c0a2604a8c0db7522e55917
+=======
+guid: bc667231fb8d6a24dbca739128f60809
+folderAsset: yes
+>>>>>>> Master-Test-Martin:Popcorn-Simulator/Assets/Prefab/ScenarioButtons.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

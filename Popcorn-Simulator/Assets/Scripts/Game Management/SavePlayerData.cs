@@ -6,10 +6,11 @@ using UnityEngine;
 public class SavePlayerData
 {
     public int playerCurrency = 0;
-
+    public bool[] scenariosUnlocked;
 
     public SavePlayerData(SaveDataContainer dataContainer) {
         playerCurrency = dataContainer.currency;
+        scenariosUnlocked = dataContainer.scenariosUnlocked;
 
     }
 

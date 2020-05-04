@@ -57,6 +57,7 @@ public class GameController : MonoBehaviour
 
     private void TimeRanOut()
     {
+        GameControl.gameControl.UpdatePopcornCount(cornCounterThisLevel);
         SceneManager.LoadScene("Main Menu");
     }
 

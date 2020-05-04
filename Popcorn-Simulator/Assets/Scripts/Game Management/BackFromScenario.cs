@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ExitLevel : MonoBehaviour
+public class BackFromScenario : MonoBehaviour
 {
-    public void ExitToMainMenu() {
+
+    public void Back() {
         GameControl.gameControl.UpdatePopcornCount(GameController.gameController.cornCounterThisLevel);
         SceneManager.LoadScene("Main Menu");
     }
