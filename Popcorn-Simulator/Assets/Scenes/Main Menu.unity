@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackFromScenarioChoice
       objectReference: {fileID: 0}
+    - target: {fileID: 2135056009643884057, guid: 93ef14c27dc454c4eada26f9eac50d52,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1129793383}
     - target: {fileID: 2135056009643884058, guid: 93ef14c27dc454c4eada26f9eac50d52,
         type: 3}
       propertyPath: credits
@@ -440,6 +445,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &466773034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2135056009643884058, guid: 93ef14c27dc454c4eada26f9eac50d52,
+    type: 3}
+  m_PrefabInstance: {fileID: 516811100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56626d1b8659ace478eef43fa378b86d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &516811100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,6 +469,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackFromCredits
       objectReference: {fileID: 0}
+    - target: {fileID: 2135056009643884057, guid: 93ef14c27dc454c4eada26f9eac50d52,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 466773034}
     - target: {fileID: 2135056009643884058, guid: 93ef14c27dc454c4eada26f9eac50d52,
         type: 3}
       propertyPath: credits
@@ -1506,6 +1528,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054306310}
   m_CullTransparentMesh: 0
+--- !u!114 &1129793383 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2135056009643884058, guid: 93ef14c27dc454c4eada26f9eac50d52,
+    type: 3}
+  m_PrefabInstance: {fileID: 236768724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56626d1b8659ace478eef43fa378b86d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1157870010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,6 +1927,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackFromCredits
       objectReference: {fileID: 0}
+    - target: {fileID: 2135056009643884057, guid: 93ef14c27dc454c4eada26f9eac50d52,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1602511395}
     - target: {fileID: 2135056009643884058, guid: 93ef14c27dc454c4eada26f9eac50d52,
         type: 3}
       propertyPath: credits
@@ -2020,6 +2059,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93ef14c27dc454c4eada26f9eac50d52, type: 3}
+--- !u!114 &1602511395 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2135056009643884058, guid: 93ef14c27dc454c4eada26f9eac50d52,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593972078}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56626d1b8659ace478eef43fa378b86d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1620250807
 GameObject:
   m_ObjectHideFlags: 0
