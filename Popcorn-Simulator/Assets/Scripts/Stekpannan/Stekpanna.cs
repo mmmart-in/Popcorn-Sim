@@ -130,6 +130,7 @@ public class Stekpanna : MonoBehaviour
 
         if (collision.CompareTag("BurntPopcorn"))
         {
+            gamecontroller.BurntPopcorn();
             SoundManager.PlaySound("burntCatch");
         }
     }

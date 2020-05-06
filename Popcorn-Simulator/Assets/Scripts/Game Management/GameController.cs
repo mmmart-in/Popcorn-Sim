@@ -54,6 +54,12 @@ public class GameController : MonoBehaviour
     {
         cornCounterThisLevel++;
     }
+    public void BurntPopcorn() 
+    {
+        cornCounterThisLevel -= 2;
+        if (cornCounterThisLevel < 0)
+            cornCounterThisLevel = 0;
+    }
 
     private void TimeRanOut()
     {
