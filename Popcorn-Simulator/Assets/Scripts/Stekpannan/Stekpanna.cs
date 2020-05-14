@@ -23,7 +23,7 @@ public class Stekpanna : MonoBehaviour
     private AudioSource audSrc;
     private ParticleSystem particle;
 
-    private int lastCatch;
+    public int lastCatch;
     private float catchTimer;
     private float timerLength = 1.5f;
 
@@ -115,26 +115,20 @@ public class Stekpanna : MonoBehaviour
             catchTimer = timerLength;
 
             //Play correct sound
-            if (lastCatch < 8)
+            if (lastCatch < 7)
             {
                 AudioClip clipToPlay = catchSounds[lastCatch];
                 audSrc.PlayOneShot(clipToPlay, 0.6f);
+                lastCatch++;
             }
-            else if (lastCatch >= 8)
-            {
-                audSrc.PlayOneShot(catchSounds[7], 0.6f);
-            }
-            if(lastCatch == 7)
+            else if(lastCatch == 7)
             {
                 particle.Play(true);
                 SoundManager.PlaySound("yay");
                 PopcornSpawner.popcornSpawnerInstance.InstantiateGoldPopcorn();
                 lastCatch = 0; 
             }
-
-
             gamecontroller.CatchPopcorn();
-            lastCatch++;
         }
 
         if (collision.CompareTag("BurntPopcorn"))
