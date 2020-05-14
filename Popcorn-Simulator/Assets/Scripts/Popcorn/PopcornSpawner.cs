@@ -7,6 +7,7 @@ public class PopcornSpawner : MonoBehaviour
     public GameObject stekpanna;
     public GameObject [] popcorn;
     public GameObject burntPopcorn;
+    public CameraShake cameraShake;
 
     public float xPos;
     public float yPos;
@@ -26,9 +27,10 @@ public class PopcornSpawner : MonoBehaviour
 
         popcornSpawnNumber = Random.Range(2, 20) * Stekpanna.stekpannaInstance.distanceToFire;
         if (popcornSpawnNumber < 3)
-            if (BurntPopcornSpawner.burntInstance.getHeat() * Random.Range(1, 5) > 10)
+            if (BurntPopcornSpawner.burntInstance.getHeat() * Random.Range(3, 5) > 10)
             {
                 SoundManager.PlaySound("burnedPopcorn");
+                StartCoroutine(cameraShake.Shake(.15f, .025f));
                 Instantiate(burntPopcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
             }
 

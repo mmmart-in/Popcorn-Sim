@@ -21,6 +21,7 @@ public class Stekpanna : MonoBehaviour
 
     private Rigidbody2D rb;
     private AudioSource audSrc;
+    private ParticleSystem particle;
 
     private int lastCatch;
     private float catchTimer;
@@ -35,6 +36,7 @@ public class Stekpanna : MonoBehaviour
         //transform.position = startPosition.position;
         rb = GetComponent<Rigidbody2D>();
         audSrc = GetComponent<AudioSource>();
+        particle = GetComponent<ParticleSystem>();
 
         catchTimer = timerLength;
 
@@ -121,6 +123,11 @@ public class Stekpanna : MonoBehaviour
             else if (lastCatch >= 8)
             {
                 audSrc.PlayOneShot(catchSounds[7], 0.6f);
+            }
+            if(lastCatch == 7)
+            {
+                particle.Play(true);
+                //SoundManager.PlaySound("yay");
             }
 
 
