@@ -128,6 +128,8 @@ public class Stekpanna : MonoBehaviour
             {
                 particle.Play(true);
                 SoundManager.PlaySound("yay");
+                PopcornSpawner.popcornSpawnerInstance.InstantiateGoldPopcorn();
+                lastCatch = 0; 
             }
 
 
@@ -137,8 +139,13 @@ public class Stekpanna : MonoBehaviour
 
         if (collision.CompareTag("BurntPopcorn"))
         {
-            gamecontroller.BurntPopcorn();
+            gamecontroller.CatchBurntPopcorn();
             SoundManager.PlaySound("burntCatch");
+        }
+        if (collision.CompareTag("GoldPopcorn"))
+        {
+            gamecontroller.CatchGoldPopcorn();
+            //SoundManager.PlaySound("");
         }
     }
 

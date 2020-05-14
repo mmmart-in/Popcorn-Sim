@@ -65,11 +65,16 @@ public class GameController : MonoBehaviour
         Debug.Log("animation");
         cornCounterThisLevel++;
     }
-    public void BurntPopcorn() 
+    public void CatchBurntPopcorn() 
     {
         cornCounterThisLevel -= 2;
         if (cornCounterThisLevel < 0)
             cornCounterThisLevel = 0;
+    }
+
+    public void CatchGoldPopcorn()
+    {
+        cornCounterThisLevel += 5;
     }
 
     private void TimeRanOut()

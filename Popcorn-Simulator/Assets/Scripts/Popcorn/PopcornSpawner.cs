@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class PopcornSpawner : MonoBehaviour
 {
+    public static PopcornSpawner popcornSpawnerInstance;
+
     public GameObject stekpanna;
     public GameObject [] popcorn;
     public GameObject burntPopcorn;
     public CameraShake cameraShake;
+    public GameObject goldPopcorn;
+    
 
     public float xPos;
     public float yPos;
@@ -16,6 +20,10 @@ public class PopcornSpawner : MonoBehaviour
     private int randomAngle;
     private float panRadius = 0.4f;
 
+    private void Awake()
+    {
+        popcornSpawnerInstance = this; 
+    }
     private void FixedUpdate()
     {
         xPos = Random.Range(stekpanna.transform.position.x - panRadius, stekpanna.transform.position.x + panRadius);
@@ -43,6 +51,9 @@ public class PopcornSpawner : MonoBehaviour
 
     }
 
+    public void InstantiateGoldPopcorn() {
+        Instantiate(goldPopcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one));
+    }
 
 
 }

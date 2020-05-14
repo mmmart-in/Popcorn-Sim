@@ -8,6 +8,7 @@ TagManager:
   - Popcorn
   - HeatZone
   - BurntPopcorn
+  - GoldPopcorn
   layers:
   - Default
   - TransparentFX
