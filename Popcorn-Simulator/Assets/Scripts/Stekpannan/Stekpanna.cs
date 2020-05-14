@@ -127,7 +127,7 @@ public class Stekpanna : MonoBehaviour
             if(lastCatch == 7)
             {
                 particle.Play(true);
-                //SoundManager.PlaySound("yay");
+                SoundManager.PlaySound("yay");
             }
 
 
