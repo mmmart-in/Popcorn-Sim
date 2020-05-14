@@ -7,16 +7,16 @@ public class ScenarioChoice : MonoBehaviour
 {
     public void HomeSweetHome()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Kitchen");
     }
 
     public void SweetSummerBreeze()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("PARK");
     }
 
     public void BeachesBeBitchin()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Beach");
     }
 }

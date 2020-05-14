@@ -35,9 +35,9 @@ public class GameControl : MonoBehaviour
         int count;
         bool[] newArray = scenariosUnlocked;
        
-        if (popcornCount >= 450)
+        if (popcornCount >= 100)
             count = 2;
-        else if (popcornCount >= 200)
+        else if (popcornCount >= 50)
             count = 1;
         else
             count = 0;

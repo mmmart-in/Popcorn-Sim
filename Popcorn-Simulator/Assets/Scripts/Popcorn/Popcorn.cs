@@ -21,7 +21,7 @@ public class Popcorn : MonoBehaviour
         upwards = Random.Range(10, 15);
         rb2d.AddForce(new Vector2(Random.Range(-2, 2), upwards), ForceMode2D.Impulse);
         circle.enabled = false;
-        particle.Play();
+        //particle.Play();
 
 
     }
