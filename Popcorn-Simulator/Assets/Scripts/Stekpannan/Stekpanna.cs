@@ -126,7 +126,9 @@ public class Stekpanna : MonoBehaviour
                 particle.Play(true);
                 SoundManager.PlaySound("yay");
                 PopcornSpawner.popcornSpawnerInstance.InstantiateGoldPopcorn();
-                lastCatch = 0; 
+                lastCatch = 0;
+                pops.Clear();
+                //tvungen att ha med pop.clear() här men vad gör pops? fattar fasen inte
             }
             gamecontroller.CatchPopcorn();
         }
@@ -135,7 +137,8 @@ public class Stekpanna : MonoBehaviour
         {
             gamecontroller.CatchBurntPopcorn();
             SoundManager.PlaySound("burntCatch");
-            lastCatch = 0; 
+            lastCatch = 0;
+            pops.Clear();
         }
         if (collision.CompareTag("GoldPopcorn"))
         {
