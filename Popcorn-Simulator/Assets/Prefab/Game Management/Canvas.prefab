@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 1779590169448871161}
   - component: {fileID: 9065271966822477189}
   - component: {fileID: 7206889112341926451}
+  - component: {fileID: 6365900374708776535}
   m_Layer: 5
   m_Name: counterText
   m_TagString: Untagged
@@ -328,3 +329,22 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!95 &6365900374708776535
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9008021722325542163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85d054e4b69117e4d941dbf681e63335, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
