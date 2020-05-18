@@ -38,6 +38,7 @@ public class PopcornSpawner : MonoBehaviour
                 SoundManager.PlaySound("burnedPopcorn");
                 StartCoroutine(cameraShake.Shake(.15f, .025f));
                 Instantiate(burntPopcorn, new Vector3(xPos, yPos, 14f), Quaternion.AngleAxis(randomAngle, Vector3.one ));
+
             }
 
             else
