@@ -10,7 +10,7 @@ public class Stekpanna : MonoBehaviour
     public Transform mid;
     public GameObject pan;
     public GameObject fire;
-    public GameObject subtractionText;
+    
 
     public float distanceToFire;
     public float moveSpeed = 10;
@@ -20,7 +20,7 @@ public class Stekpanna : MonoBehaviour
     public List<GameObject> pops = new List<GameObject>();
     public AudioClip[] catchSounds;
 
-
+    [SerializeField] private Transform subtractionText;
     private Rigidbody2D rb;
     private AudioSource audSrc;
     private ParticleSystem particle;
@@ -137,7 +137,7 @@ public class Stekpanna : MonoBehaviour
 
         if (collision.CompareTag("BurntPopcorn"))
         {
-            Instantiate(subtractionText, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity, FindObjectOfType<Canvas>().transform);
+            Instantiate(subtractionText, (collision.transform.localPosition), Quaternion.identity);
             gamecontroller.CatchBurntPopcorn();
             SoundManager.PlaySound("burntCatch");
             lastCatch = 0;

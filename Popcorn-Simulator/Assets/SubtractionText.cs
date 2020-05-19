@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class SubtractionText : MonoBehaviour
 {
     private Color textColor;
-    private Text text;
+    private TextMeshPro textMesh;
     private void Awake()
     {
-        text = GetComponent<Text>();
-        textColor = text.color;
-        textColor.a -= Time.deltaTime;
+        Destroy(gameObject, 3f);
+        textMesh = GetComponent<TextMeshPro>();
+        textColor = textMesh.color;
     }
     private void Update()
     {
-        text.color = textColor;
+        textColor.a -= Time.deltaTime;
+        textMesh.color = textColor;
     }
 }
