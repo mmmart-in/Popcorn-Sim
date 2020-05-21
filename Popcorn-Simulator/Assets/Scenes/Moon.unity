@@ -489,6 +489,12 @@ PrefabInstance:
       propertyPath: gamecontroller
       value: 
       objectReference: {fileID: 375937199}
+    - target: {fileID: 5017068695603114558, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: subtractionText
+      value: 
+      objectReference: {fileID: 1055716573295538809, guid: 75ee3e51722c2cf458ec798d6e4e9ba8,
+        type: 3}
     - target: {fileID: 5017068695603114559, guid: ef56f8625d5232049bcc6729ab1c35ed,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -188,12 +188,12 @@ MonoBehaviour:
   gamecontroller: {fileID: 0}
   startPosition: {fileID: 0}
   mid: {fileID: 5017068696135416281}
+  pan: {fileID: 5017068695603114553}
+  fire: {fileID: 0}
   distanceToFire: 0
   moveSpeed: 35
   offsetY: 10
   canPop: 0
-  pan: {fileID: 5017068695603114553}
-  fire: {fileID: 0}
   pops: []
   catchSounds:
   - {fileID: 8300000, guid: e107e1acf86832746917bbe23ab63e83, type: 3}
@@ -204,6 +204,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0a40713d1e4aa98408065e6e2b3029dc, type: 3}
   - {fileID: 8300000, guid: c2ac06f33c3727c44b9aae1b647c1578, type: 3}
   - {fileID: 8300000, guid: 9adf33c450c3b4f4ab5cc9a23a01f7a8, type: 3}
+  subtractionText: {fileID: 1055716573295538809, guid: 75ee3e51722c2cf458ec798d6e4e9ba8,
+    type: 3}
   lastCatch: 0
 --- !u!68 &5017068695603114531
 EdgeCollider2D:
@@ -410,6 +412,7 @@ MonoBehaviour:
   cameraShake: {fileID: 0}
   goldPopcorn: {fileID: 8266652160745223421, guid: c9fe561cf31917f45a27949f3fd2d706,
     type: 3}
+  levelMultiplier: 0
   xPos: 0
   yPos: 0
 --- !u!198 &243437825661374067
