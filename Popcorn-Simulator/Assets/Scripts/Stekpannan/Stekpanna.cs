@@ -20,7 +20,7 @@ public class Stekpanna : MonoBehaviour
     public List<GameObject> pops = new List<GameObject>();
     public AudioClip[] catchSounds;
 
-    [SerializeField] private Transform subtractionText;
+    public Transform subtractionText;
     private Rigidbody2D rb;
     private AudioSource audSrc;
     private ParticleSystem particle;
