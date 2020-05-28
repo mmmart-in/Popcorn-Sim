@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour
     public void CatchPopcorn()
     {
         counterAnim.SetTrigger("catch");
-        Debug.Log("animation");
+        
         cornCounterThisLevel++;
     }
     public void CatchBurntPopcorn() 

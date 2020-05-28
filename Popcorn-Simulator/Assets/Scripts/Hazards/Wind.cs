@@ -5,7 +5,7 @@ using UnityEngine;
 public class Wind : MonoBehaviour
 {
 
-    private float moveSpeed = 5f;
+    private float moveSpeed = 4f;
     private float rightMove;
     private float leftMove;
     private AreaEffector2D windEffect;

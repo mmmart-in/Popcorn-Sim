@@ -82,8 +82,11 @@ MonoBehaviour:
   - {fileID: 4043493248364433575}
   - {fileID: 4043493249200123877}
   - {fileID: 4043493249112168060}
-  wind: {fileID: 6005438081293632865, guid: b540179cc0f7826458b9dd43f8d5679c, type: 3}
+  wind: {fileID: 9203672220027694488, guid: d7127c5e3ebcd2040b9ced2f3c8048f3, type: 3}
+  timerResetMin: 2
+  timerResetMax: 7
   timerReset: 2
+  timer: 0
 --- !u!1 &4043493249112168061
 GameObject:
   m_ObjectHideFlags: 0

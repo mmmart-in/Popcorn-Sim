@@ -626,7 +626,7 @@ PrefabInstance:
     - target: {fileID: 4043493248397345452, guid: fce711d650df49b40a294e2796ee339a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.84054434
+      value: 4.17
       objectReference: {fileID: 0}
     - target: {fileID: 4043493248397345452, guid: fce711d650df49b40a294e2796ee339a,
         type: 3}
@@ -1075,7 +1075,7 @@ PrefabInstance:
     - target: {fileID: 14181382965220168, guid: 9e96eba09c767fe479c687454b2571f7,
         type: 3}
       propertyPath: gameTimer
-      value: 12
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 14181382965220168, guid: 9e96eba09c767fe479c687454b2571f7,
         type: 3}
