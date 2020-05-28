@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
     
 
     private Animator counterAnim;
+    private bool timerPlayed;
     
     void Start()
     {
@@ -42,12 +43,21 @@ public class GameController : MonoBehaviour
         if(gameTimer < 11)
         {
             timerText.text = "" + (int)gameTimer;
+            if (!timerPlayed)
+            {
+                SoundManager.PlaySound("timer");
+                timerPlayed = true;
+            }
         }
+        
+
+        
         
 
         gameTimer -= Time.deltaTime;
         if(gameTimer <= 0)
         {
+            
             TimeRanOut();
         }
 

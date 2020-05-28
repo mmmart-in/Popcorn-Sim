@@ -4,7 +4,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public static AudioClip popcorn, wind, burnedPopcorn, burntCatch, goldPopcorn, yay;
+    public static AudioClip popcorn, wind, burnedPopcorn, burntCatch, goldPopcorn, yay, timer;
     static AudioSource audSrc;
 
     void Start()
@@ -16,6 +16,7 @@ public class SoundManager : MonoBehaviour
         burntCatch = Resources.Load<AudioClip>("burntPopcornCatch");
         wind = Resources.Load<AudioClip>("Wind");
         yay = Resources.Load<AudioClip>("yay");
+        timer = Resources.Load<AudioClip>("TIMER");
     }
 
     public static void PlaySound(string clip)
@@ -43,6 +44,10 @@ public class SoundManager : MonoBehaviour
             case "yay":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
                 audSrc.PlayOneShot(yay, 0.2f);
+                break;
+            case "timer":
+                //audSrc.pitch = Random.Range(0.8f, 1f);
+                audSrc.PlayOneShot(timer, 0.2f);
                 break;
 
 
