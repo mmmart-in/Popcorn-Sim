@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour
     public Text cornCounterText;
     public Text timerText;
 
+    public GameObject gameOverPanel;
+    public Text gameOverText;
+
 
     [Header("Timer")]
     public float gameTimer = 60;
@@ -24,8 +27,8 @@ public class GameController : MonoBehaviour
         gameController = this;
         timerText.text = "";
         counterAnim = cornCounterText.GetComponent<Animator>();
-        
-        
+        gameOverPanel.SetActive(false);
+
     }
 
 
@@ -89,9 +92,24 @@ public class GameController : MonoBehaviour
 
     private void TimeRanOut()
     {
+        gameOverPanel.SetActive(true);
+        gameOverText.text = "You caught " + cornCounterThisLevel + " popcorn!";
         GameControl.gameControl.UpdatePopcornCount(cornCounterThisLevel);
+        timerText.text = "";
+        
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void GoToMenu()
+    {
         SceneManager.LoadScene("Main Menu");
     }
+
+
 
 
 }

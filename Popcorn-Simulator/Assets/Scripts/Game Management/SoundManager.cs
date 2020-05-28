@@ -25,16 +25,16 @@ public class SoundManager : MonoBehaviour
         {
             case "popcorn":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(popcorn, 0.5f);
+                audSrc.PlayOneShot(popcorn, 1f);
                 break;
             case "burnedPopcorn":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(burnedPopcorn, 0.7f);
+                audSrc.PlayOneShot(burnedPopcorn, 1.2f);
                 break;
 
             case "burntCatch":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(burntCatch, 1.3f);
+                audSrc.PlayOneShot(burntCatch, 1.6f);
                 break;
 
             case "Wind":
@@ -47,7 +47,7 @@ public class SoundManager : MonoBehaviour
                 break;
             case "timer":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(timer, 0.2f);
+                audSrc.PlayOneShot(timer, 0.4f);
                 break;
 
 
