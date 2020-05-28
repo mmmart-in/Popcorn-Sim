@@ -6111,6 +6111,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 48863459647909454, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779259173685164488, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_Name
+      value: BackButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3057888535201263572, guid: e4c74aa6df6ff1747b7b3a551a597cac,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6405,6 +6415,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053348951381817984, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053348951381817984, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.19339621
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053348951381817984, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053348951381817984, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.26181313
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053348951381817984, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7053348951381817984, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2139380665}
+    - target: {fileID: 7053348951381817984, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4c74aa6df6ff1747b7b3a551a597cac, type: 3}
