@@ -36,42 +36,36 @@ public class GameController : MonoBehaviour
     {
         
 
-        if(gameTimer < 11)
+        if (gameTimer <= 0 && gameTimer > -99)
         {
-            timerText.text = "" + (int)gameTimer;
-        }
-        
-        cornCounterText.text = "" + cornCounterThisLevel;
+            //jävla fusklösning på hur man ska få detta kommando att sluta utföras, vi vill bara kalla detta en gång så gameTimer måste sättas till något som gör if()-statement false
+            gameTimer = -100;
+            TimeRanOut();
 
-        if(gameTimer < 11)
+        }
+
+        //räkna bara ned när gameTimer>0, när timern tagit slut ska inte heller cornCounterText uppdateras
+        else if(gameTimer > 0)
         {
-            timerText.text = "" + (int)gameTimer;
-            if (!timerPlayed)
+            gameTimer -= Time.deltaTime;
+            cornCounterText.text = "" + cornCounterThisLevel;
+
+            if (gameTimer < 11)
             {
-                SoundManager.PlaySound("timer");
-                timerPlayed = true;
+                timerText.text = "" + (int)gameTimer;
+                if (!timerPlayed)
+                {
+                    SoundManager.PlaySound("timer");
+                    timerPlayed = true;
+                }
             }
         }
         
 
-        
-        
-
-        gameTimer -= Time.deltaTime;
-        if(gameTimer <= 0)
-        {
-            
-            TimeRanOut();
-        }
-
-       
-    }
-    private void FixedUpdate()
-    {
-        
-
     }
 
+    private void FreezeCornCounter() { 
+    }
     public void CatchPopcorn()
     {
         counterAnim.SetTrigger("catch");

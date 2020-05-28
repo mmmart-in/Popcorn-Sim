@@ -22,6 +22,7 @@ public class ScenarioControl : MonoBehaviour
             if(scenarios[i] != null) { 
             scenarios[i].GetComponent<Button>().interactable = scenariosUnlocked[i];
             scenarios[i].transform.GetChild(0).GetComponent<Image>().enabled = !scenariosUnlocked[i];
+            scenarios[i].transform.GetChild(1).GetComponent<Image>().enabled = !scenariosUnlocked[i];
             }
         }
     }
