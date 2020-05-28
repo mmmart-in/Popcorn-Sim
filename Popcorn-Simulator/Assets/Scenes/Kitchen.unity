@@ -5770,6 +5770,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2169076384705053082, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
         type: 3}
       propertyPath: popcorn.Array.size
