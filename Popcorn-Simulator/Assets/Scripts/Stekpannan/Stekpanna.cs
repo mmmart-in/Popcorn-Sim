@@ -80,6 +80,11 @@ public class Stekpanna : MonoBehaviour
             catchTimer -= Time.deltaTime;
         }
 
+        if(gamecontroller.gameTimer <= 0)
+        {
+            this.gameObject.SetActive(false);
+        }
+
 
     }
 
