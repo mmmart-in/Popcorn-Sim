@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ScenarioChoice : MonoBehaviour
 {
+    public void BackToScenarioChoice() {
+        GameControl.gameControl.UpdatePopcornCount();
+        SceneManager.LoadScene("ScenarioChoice");
+    }
+    public void BackToMainMenu() {
+        SceneManager.LoadScene("Main Menu");
+    }
     public void HomeSweetHome()
     {
         SceneManager.LoadScene("Kitchen");

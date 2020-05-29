@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Moon.unity
     guid: f671fe341a04d594aadf93982099ea1b
+  - enabled: 1
+    path: Assets/Scenes/ScenarioChoice.unity
+    guid: 70afceaf0b8242e49928462f6d4c4379
   m_configObjects: {}

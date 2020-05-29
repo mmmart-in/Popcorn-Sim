@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class GameControl : MonoBehaviour
 {
 
     public static GameControl gameControl;
     public int popcornCount;
     public bool[] scenariosUnlocked;
+
+    public bool activeSession;
     
+    private ScenarioControl scenarioControl;
 
 
     void Awake()
     {
+        scenarioControl = FindObjectOfType<ScenarioControl>();
+        Load();
+
         if (gameControl == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -23,11 +28,19 @@ public class GameControl : MonoBehaviour
         else if (gameControl != this)
             Destroy(gameObject);
 
-        Load();
+        Debug.Log("GameControl AWAKE");
+
     }
-       
+
+
+
+
     public void UpdatePopcornCount(int popcorn) {
         popcornCount += popcorn;
+        Save();
+    }
+    public void UpdatePopcornCount() {
+        popcornCount += GameController.gameController.cornCounterThisLevel;
         Save();
     }
     public void Purchase(int cost, int levelNumber)
@@ -44,29 +57,8 @@ public class GameControl : MonoBehaviour
             Save();
             Load();
         }
-    
-            
     }
 
-    /*public void CheckUnlocks(bool[] arr)
-    {
-        int count;
-        bool[] newArray = scenariosUnlocked;
-
-        if (popcornCount >= 100)
-            count = 2;
-        else if (popcornCount >= 50)
-            count = 1;
-        else
-            count = 0;
-
-        for (int i = 0; i <= count; i++)
-        {
-            newArray[i] = true;
-        }
-        scenariosUnlocked = newArray;
-        Save();
-    }*/
 
 
     public void Save() {
@@ -81,7 +73,8 @@ public class GameControl : MonoBehaviour
         else
             scenariosUnlocked = new bool[] { true, false, false };
 
-        ScenarioControl.scenarioControlInstance.UpdateUnlocks(scenariosUnlocked);
+        scenarioControl.UpdateUnlocks(scenariosUnlocked);
+        Debug.Log("UpdateUnlocks called with" + scenariosUnlocked);
 
         Debug.Log("loaded data " + SaveSystem.LoadPlayer().playerCurrency + " to gamecontrol, counter is " + popcornCount);
     }
