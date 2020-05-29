@@ -374,6 +374,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5712102246725503328}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &952842375
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952842371}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.16, y: 1.9}
+    newSize: {x: 8.16, y: 1.9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.16, y: 1.9}
+  m_EdgeRadius: 0
 --- !u!1001 &1065618773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -927,6 +953,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae861996c160ca54cac27fced7b821d6, type: 3}
+--- !u!212 &2003743349 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3859006097619444685, guid: ef56f8625d5232049bcc6729ab1c35ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 5017068695466240435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2124638653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8385558537894131829, guid: 031c81f1fa2cab9479143d225e90af51,
@@ -1173,7 +1205,7 @@ PrefabInstance:
         type: 3}
       propertyPath: heatSprite
       value: 
-      objectReference: {fileID: 699952062}
+      objectReference: {fileID: 2003743349}
     - target: {fileID: 5017068695603114553, guid: ef56f8625d5232049bcc6729ab1c35ed,
         type: 3}
       propertyPath: m_Name
