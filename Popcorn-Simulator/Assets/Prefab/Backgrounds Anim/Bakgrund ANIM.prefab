@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7282949629967917602}
   - component: {fileID: -785881197942564177}
   m_Layer: 5
-  m_Name: BeachPanel
+  m_Name: Bakgrund ANIM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ VideoPlayer:
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
+  m_RenderMode: 0
   m_AspectRatio: 0
   m_DataSource: 0
   m_PlaybackSpeed: 1
