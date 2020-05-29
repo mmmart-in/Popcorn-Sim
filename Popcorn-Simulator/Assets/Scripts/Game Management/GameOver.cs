@@ -14,5 +14,6 @@ public class GameOver : MonoBehaviour
     private void OnEnable()
     {
         anim.SetTrigger("gameover");
+        SoundManager.PlaySound("gameOver");
     }
 }
