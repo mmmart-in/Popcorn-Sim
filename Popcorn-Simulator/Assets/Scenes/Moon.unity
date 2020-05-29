@@ -180,6 +180,11 @@ PrefabInstance:
       propertyPath: m_ControlledAudioTrackCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -785881197942564177, guid: 62f20aac431b05c4c9deefed1dbf54f9,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7282949629967917604, guid: 62f20aac431b05c4c9deefed1dbf54f9,
         type: 3}
       propertyPath: m_Name
@@ -1106,7 +1111,7 @@ PrefabInstance:
     - target: {fileID: 7738810517568031497, guid: e4c74aa6df6ff1747b7b3a551a597cac,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -104.999756
+      value: -104.99963
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4c74aa6df6ff1747b7b3a551a597cac, type: 3}

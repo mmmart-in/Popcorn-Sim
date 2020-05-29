@@ -174,6 +174,11 @@ PrefabInstance:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 5072905487013866391}
+    - target: {fileID: -785881197942564177, guid: 62f20aac431b05c4c9deefed1dbf54f9,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7282949629967917604, guid: 62f20aac431b05c4c9deefed1dbf54f9,
         type: 3}
       propertyPath: m_Name
