@@ -151,7 +151,7 @@ public class Stekpanna : MonoBehaviour
         if (collision.CompareTag("GoldPopcorn"))
         {
             gamecontroller.CatchGoldPopcorn();
-            //SoundManager.PlaySound("");
+            SoundManager.PlaySound("gold");
         }
     }
 
