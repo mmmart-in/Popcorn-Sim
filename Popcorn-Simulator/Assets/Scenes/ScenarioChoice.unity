@@ -352,7 +352,7 @@ PrefabInstance:
     - target: {fileID: 5606758226230991149, guid: ac3641025a16ec545afc6fd372c3b1ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5606758226230991149, guid: ac3641025a16ec545afc6fd372c3b1ea,
         type: 3}
@@ -1458,7 +1458,7 @@ PrefabInstance:
     - target: {fileID: 8310880061339599252, guid: ce7125d8fe3a41143bd980d701a7435e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8310880061339599252, guid: ce7125d8fe3a41143bd980d701a7435e,
         type: 3}
@@ -1475,6 +1475,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8310880061339599253, guid: ce7125d8fe3a41143bd980d701a7435e,
+        type: 3}
+      propertyPath: scenarios.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310880061339599253, guid: ce7125d8fe3a41143bd980d701a7435e,
+        type: 3}
+      propertyPath: scenarios.Array.data[0]
+      value: 
+      objectReference: {fileID: 224972359}
+    - target: {fileID: 8310880061339599253, guid: ce7125d8fe3a41143bd980d701a7435e,
+        type: 3}
+      propertyPath: scenarios.Array.data[1]
+      value: 
+      objectReference: {fileID: 1552941409}
+    - target: {fileID: 8310880061339599253, guid: ce7125d8fe3a41143bd980d701a7435e,
+        type: 3}
+      propertyPath: scenarios.Array.data[2]
+      value: 
+      objectReference: {fileID: 1844929853}
     - target: {fileID: 8310880061339599254, guid: ce7125d8fe3a41143bd980d701a7435e,
         type: 3}
       propertyPath: m_Name

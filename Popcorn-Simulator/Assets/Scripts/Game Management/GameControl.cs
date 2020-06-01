@@ -7,11 +7,9 @@ public class GameControl : MonoBehaviour
 {
 
     public static GameControl gameControl;
-    public GameObject tooExpensiveInfo;
     public int popcornCount;
     public bool[] scenariosUnlocked;
 
-    public bool activeSession;
     
     private ScenarioControl scenarioControl;
 
@@ -20,7 +18,6 @@ public class GameControl : MonoBehaviour
     {
         scenarioControl = FindObjectOfType<ScenarioControl>();
         Load();
-
         if (gameControl == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -30,9 +27,6 @@ public class GameControl : MonoBehaviour
             Destroy(gameObject);
 
     }
-
-
-
 
     public void UpdatePopcornCount(int popcorn) {
         popcornCount += popcorn;
@@ -62,19 +56,30 @@ public class GameControl : MonoBehaviour
 
     public void Save() {
         SaveSystem.SaveData(new SaveDataContainer(popcornCount, scenariosUnlocked));
+        Debug.Log("Saved");
     }
     public void Load()
     {
+        Debug.Log("Loaded");
         popcornCount = SaveSystem.LoadPlayer().playerCurrency;
 
-         if (SaveSystem.LoadPlayer().scenariosUnlocked != null)
-            scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
-        else
-            scenariosUnlocked = new bool[] { true, false, false };
+        GetScenariosUnlocked();
+
+        Debug.Log("loaded data " + SaveSystem.LoadPlayer().playerCurrency + " to gamecontrol, counter is " + popcornCount);
 
         scenarioControl.UpdateUnlocks(scenariosUnlocked);
         Debug.Log("UpdateUnlocks called with" + scenariosUnlocked);
 
-        Debug.Log("loaded data " + SaveSystem.LoadPlayer().playerCurrency + " to gamecontrol, counter is " + popcornCount);
+
+    }
+
+    private void GetScenariosUnlocked() {
+        scenarioControl = FindObjectOfType<ScenarioControl>();
+
+        if (SaveSystem.LoadPlayer().scenariosUnlocked != null)
+            scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
+        else
+            scenariosUnlocked = new bool[] { true, false, false };
+
     }
 }
