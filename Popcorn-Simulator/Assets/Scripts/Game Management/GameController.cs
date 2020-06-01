@@ -89,7 +89,7 @@ public class GameController : MonoBehaviour
         gameOverText.text = "You caught " + cornCounterThisLevel + " popcorn!";
         GameControl.gameControl.UpdatePopcornCount(cornCounterThisLevel);
         timerText.text = "";
-        //SoundManager.PlaySound("gameOver");
+        SoundManager.PlaySound("gameOver");
 
     }
 
