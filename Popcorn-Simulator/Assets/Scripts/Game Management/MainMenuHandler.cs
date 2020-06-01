@@ -13,7 +13,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public void PlayGame()
     {
-        ChangeActiveScene(mainMenu, scenarioChoice);
+        SceneManager.LoadScene("ScenarioChoice");
     }
 
     public void HowToPlay()

@@ -9,11 +9,11 @@ public class GameOver : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
+
     }
 
     private void OnEnable()
     {
         anim.SetTrigger("gameover");
-        SoundManager.PlaySound("gameOver");
     }
 }

@@ -10,7 +10,7 @@ public class ScenarioControl : MonoBehaviour
 
     public void Awake()
     {
-        scenarioControlInstance = this; 
+            scenarioControlInstance = this;
     }
     public void UpdateUnlocks(bool[] scenariosUnlocked)
     {
@@ -26,5 +26,4 @@ public class ScenarioControl : MonoBehaviour
             }
         }
     }
-    public void Hey() { Debug.Log("Hey"); }
 }
