@@ -125,7 +125,7 @@ public class Stekpanna : MonoBehaviour
             if (lastCatch < 7)
             {
                 AudioClip clipToPlay = catchSounds[lastCatch];
-                audSrc.PlayOneShot(clipToPlay, 0.6f);
+                audSrc.PlayOneShot(clipToPlay, 1f);
                 lastCatch++;
             }
             else if(lastCatch == 7)
