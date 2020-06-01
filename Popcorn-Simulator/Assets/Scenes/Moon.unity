@@ -953,11 +953,6 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3987552225509379903, guid: e4c74aa6df6ff1747b7b3a551a597cac,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5572125684841067630, guid: e4c74aa6df6ff1747b7b3a551a597cac,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
