@@ -4,14 +4,52 @@ using UnityEngine;
 
 public class UnlockCallsFromButton : MonoBehaviour
 {
+    public BuyWindow buyWindow;
+    private BuyWindow windowInstance;
+    private int cost;
+    private int lvlNum;
+    private Coroutine coroutine;
     public void UnlockPark() {
-        GameControl.gameControl.Purchase(200, 1);
+        cost = 200;
+        lvlNum = 1;
+        StartCoroutine(PlayerChoice());
+        coroutine = null;
     }
 
     public void UnlockBeach() {
-        GameControl.gameControl.Purchase(300, 2);
+        cost = 300;
+        lvlNum = 2;
+        StartCoroutine(PlayerChoice());
+        coroutine = null;
     }
     public void UnlockMoon() {
-        GameControl.gameControl.Purchase(450, 3);
+        cost = 450;
+        lvlNum = 3;
+        StartCoroutine(PlayerChoice());
+    }
+
+    
+    IEnumerator PlayerChoice()
+    {
+
+        windowInstance = Instantiate(buyWindow, FindObjectOfType<Canvas>().transform);
+        windowInstance.setText(this.cost);
+
+        while (windowInstance.result == 0)
+            yield return null; 
+
+        if (windowInstance.result == 2)
+        {
+            GameControl.gameControl.Purchase(cost, lvlNum);
+            Debug.Log("Result 2 read in purchase call");
+
+        }
+        else if (windowInstance.result == 1)
+        {
+            Debug.Log("Destroyed");
+        }
+
+        Destroy(windowInstance.gameObject);
+        
     }
 }
