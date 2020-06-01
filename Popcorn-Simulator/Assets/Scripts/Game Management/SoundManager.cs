@@ -27,21 +27,21 @@ public class SoundManager : MonoBehaviour
         {
             case "popcorn":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(popcorn, 1f);
+                audSrc.PlayOneShot(popcorn, 1.3f);
                 break;
             case "burnedPopcorn":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(burnedPopcorn, 1.2f);
+                audSrc.PlayOneShot(burnedPopcorn, 1.7f);
                 break;
 
             case "burntCatch":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(burntCatch, 1.6f);
+                audSrc.PlayOneShot(burntCatch, 2.5f);
                 break;
 
             case "Wind":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(wind, 0.2f);
+                audSrc.PlayOneShot(wind, 0.5f);
                 break;
             case "yay":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
@@ -49,7 +49,7 @@ public class SoundManager : MonoBehaviour
                 break;
             case "timer":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(timer, 0.4f);
+                audSrc.PlayOneShot(timer, 0.6f);
                 break;
             case "gold":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
@@ -57,7 +57,7 @@ public class SoundManager : MonoBehaviour
                 break;
             case "gameOver":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
-                audSrc.PlayOneShot(gameOver, 0.8f);
+                audSrc.PlayOneShot(gameOver, 1.5f);
                 break;
 
 
