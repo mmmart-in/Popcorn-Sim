@@ -64,8 +64,7 @@ public class GameController : MonoBehaviour
 
     }
 
-    private void FreezeCornCounter() { 
-    }
+
     public void CatchPopcorn()
     {
         counterAnim.SetTrigger("catch");
@@ -90,7 +89,8 @@ public class GameController : MonoBehaviour
         gameOverText.text = "You caught " + cornCounterThisLevel + " popcorn!";
         GameControl.gameControl.UpdatePopcornCount(cornCounterThisLevel);
         timerText.text = "";
-        
+        //SoundManager.PlaySound("gameOver");
+
     }
 
     public void PlayAgain()

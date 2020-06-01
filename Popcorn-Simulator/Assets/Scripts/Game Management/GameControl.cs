@@ -28,8 +28,6 @@ public class GameControl : MonoBehaviour
         else if (gameControl != this)
             Destroy(gameObject);
 
-        Debug.Log("GameControl AWAKE");
-
     }
 
 
