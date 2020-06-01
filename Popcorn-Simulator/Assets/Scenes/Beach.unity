@@ -611,6 +611,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1247280869389724043, guid: e4c74aa6df6ff1747b7b3a551a597cac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 232
+      objectReference: {fileID: 0}
     - target: {fileID: 3057888535201263572, guid: e4c74aa6df6ff1747b7b3a551a597cac,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1137,7 +1142,7 @@ PrefabInstance:
     - target: {fileID: 14181382965220168, guid: 9e96eba09c767fe479c687454b2571f7,
         type: 3}
       propertyPath: gameTimer
-      value: 60
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 14181382965220170, guid: 9e96eba09c767fe479c687454b2571f7,
         type: 3}
