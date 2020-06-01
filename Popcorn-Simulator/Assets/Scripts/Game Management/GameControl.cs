@@ -7,6 +7,7 @@ public class GameControl : MonoBehaviour
 {
 
     public static GameControl gameControl;
+    public GameObject tooExpensiveInfo;
     public int popcornCount;
     public bool[] scenariosUnlocked;
 
