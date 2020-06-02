@@ -683,11 +683,6 @@ PrefabInstance:
       objectReference: {fileID: 1661164424653512531}
     - target: {fileID: 14181382965220168, guid: 9e96eba09c767fe479c687454b2571f7,
         type: 3}
-      propertyPath: gameTimer
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 14181382965220168, guid: 9e96eba09c767fe479c687454b2571f7,
-        type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1715794599}

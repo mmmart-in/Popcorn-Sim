@@ -43,7 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221bc99479920ae45ba781d3f89ca191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eld: {fileID: 0}
-  popcorn: {fileID: 8266652160745223421, guid: 0052975df56153b4897336a02521e3cc, type: 3}
-  stekpanna: {fileID: 0}
-  distance: 0
+  cornCounterThisLevel: 0
+  cornCounterText: {fileID: 0}
+  timerText: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  gameOverText: {fileID: 0}
+  gameTimer: 60
