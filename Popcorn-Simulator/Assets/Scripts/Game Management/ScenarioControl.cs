@@ -9,13 +9,8 @@ public class ScenarioControl : MonoBehaviour
     public GameObject [] scenarios;
 
     public void Awake()
-    {
-        
+    {       
             scenarioControlInstance = this;
-        scenarios[0] = GameObject.Find("HSHButton");
-        scenarios[1] = GameObject.Find("SSBButton");
-        scenarios[2] = GameObject.Find("BBBButton");
-        Debug.Log("ScenarioControl awake and assigned");
     }
     public void UpdateUnlocks(bool[] scenariosUnlocked)
     {
@@ -25,15 +20,9 @@ public class ScenarioControl : MonoBehaviour
 
         for (int i = 0; i < scenarios.Length; i++)
         {
-            if (scenarios[i] == null)
-                Debug.Log("Scenarios[" + i + "] is null");
-            else
-            {
                 scenarios[i].GetComponent<Button>().interactable = scenariosUnlocked[i];
                 scenarios[i].transform.GetChild(0).GetComponent<Image>().enabled = !scenariosUnlocked[i];
                 scenarios[i].transform.GetChild(1).GetComponent<Image>().enabled = !scenariosUnlocked[i];
-                Debug.Log("scenario # + " + i + " unlocked");
-            }
         }
     }
 }

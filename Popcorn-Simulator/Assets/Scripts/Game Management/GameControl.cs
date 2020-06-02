@@ -16,7 +16,6 @@ public class GameControl : MonoBehaviour
 
     void Awake()
     {
-        scenarioControl = FindObjectOfType<ScenarioControl>();
         Load();
         if (gameControl == null)
         {
@@ -79,7 +78,7 @@ public class GameControl : MonoBehaviour
         if (SaveSystem.LoadPlayer().scenariosUnlocked != null)
             scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
         else
-            scenariosUnlocked = new bool[] { true, false, false };
+            scenariosUnlocked = new bool[] { true, false, false, false };
 
     }
 }

@@ -26,4 +26,8 @@ public class ScenarioChoice : MonoBehaviour
     {
         SceneManager.LoadScene("Beach");
     }
+
+    public void LunarLovingLunatic() {
+        SceneManager.LoadScene("Moon");
+    }
 }
