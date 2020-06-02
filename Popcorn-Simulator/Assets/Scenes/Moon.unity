@@ -527,6 +527,18 @@ PrefabInstance:
       propertyPath: cameraShake
       value: 
       objectReference: {fileID: 945997587}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: burntPopcorn
+      value: 
+      objectReference: {fileID: 669593526339771527, guid: 5326860a6fb97f94d9912c80b42df30a,
+        type: 3}
+    - target: {fileID: 5017068695440825606, guid: ef56f8625d5232049bcc6729ab1c35ed,
+        type: 3}
+      propertyPath: goldPopcorn
+      value: 
+      objectReference: {fileID: 5094924314187096601, guid: 6f669a8aea029a647b5b45655430d15a,
+        type: 3}
     - target: {fileID: 5017068695603114553, guid: ef56f8625d5232049bcc6729ab1c35ed,
         type: 3}
       propertyPath: m_Name
