@@ -44,5 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popcornCount: 0
-  scenarios: []
-  scenariosUnlocked: 000000
+  scenariosUnlocked: 00000000
