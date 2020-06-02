@@ -16,7 +16,12 @@ public class GameControl : MonoBehaviour
 
     void Awake()
     {
-        Load();
+       
+        if (SaveSystem.LoadPlayer() == null)
+            Save();
+        else
+            Load();
+
         if (gameControl == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -60,6 +65,7 @@ public class GameControl : MonoBehaviour
     public void Load()
     {
         Debug.Log("Loaded");
+  
         popcornCount = SaveSystem.LoadPlayer().playerCurrency;
 
         GetScenariosUnlocked();
@@ -75,10 +81,11 @@ public class GameControl : MonoBehaviour
     private void GetScenariosUnlocked() {
         scenarioControl = FindObjectOfType<ScenarioControl>();
 
-        if (SaveSystem.LoadPlayer().scenariosUnlocked == null || SaveSystem.LoadPlayer().scenariosUnlocked.Length != ScenarioControl.scenarioControlInstance.scenarios.Length)
-            scenariosUnlocked = new bool[] { true, false, false, false };       
-        else
+        if (SaveSystem.LoadPlayer().scenariosUnlocked != null || SaveSystem.LoadPlayer().scenariosUnlocked.Length != ScenarioControl.scenarioControlInstance.scenarios.Length)
             scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
+        else
+            scenariosUnlocked = new bool[] { true, false, false, false };
+        
 
     }
 }

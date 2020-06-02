@@ -28,7 +28,8 @@ public class UnlockCallsFromButton : MonoBehaviour
     public void UnlockMoon() {
         cost = 450;
         lvlNum = 3;
-        StartCoroutine(PlayerChoice());
+        if (coroutine == null)
+            StartCoroutine(PlayerChoice());
     }
 
     
