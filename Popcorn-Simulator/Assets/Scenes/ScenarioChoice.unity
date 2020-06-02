@@ -214,7 +214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 548, y: 118.091125}
+  m_AnchoredPosition: {x: 303, y: 261}
   m_SizeDelta: {x: 354.7, y: 137.29999}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &393209180
@@ -857,6 +857,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5072905486574212073, guid: 86c4601c7911afd4c93125ba521a844f,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.93725497
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072905486574212073, guid: 86c4601c7911afd4c93125ba521a844f,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.8431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072905486574212073, guid: 86c4601c7911afd4c93125ba521a844f,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072905486574212073, guid: 86c4601c7911afd4c93125ba521a844f,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5072905486798131521, guid: 86c4601c7911afd4c93125ba521a844f,
         type: 3}
       propertyPath: m_Name
@@ -1265,6 +1285,21 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4049271179209479025, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190028402302699994, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008021722325542163, guid: e225a7fafea21ef468f9e1756a7d474c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e225a7fafea21ef468f9e1756a7d474c, type: 3}
 --- !u!224 &1534768110 stripped
@@ -1578,7 +1613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 340, y: 73.54114}
+  m_AnchoredPosition: {x: 95, y: 216.45013}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1996430812
@@ -1871,6 +1906,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 347758197}
     m_Modifications:
+    - target: {fileID: 1504035768131364926, guid: ea876acc468a02549b344c9dfa5e57ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4750511503089941836, guid: ea876acc468a02549b344c9dfa5e57ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1990,6 +2030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LunarLovingLunatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750511503297834163, guid: ea876acc468a02549b344c9dfa5e57ff,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5151575638549945750, guid: ea876acc468a02549b344c9dfa5e57ff,
         type: 3}
