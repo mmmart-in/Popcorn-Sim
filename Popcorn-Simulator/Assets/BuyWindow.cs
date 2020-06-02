@@ -21,10 +21,10 @@ public class BuyWindow : MonoBehaviour
 
     public void setText(int cost) {
         text = GetComponentInChildren<TextMeshProUGUI>();
-        text.text = "Would you like to spend " + cost.ToString() + " popcorn to unlock this level ?";
+        text.text = "Would you like to spend " + cost.ToString() + " popcorn to unlock this level?";
 
-        if (GameControl.gameControl.popcornCount < cost)
-            confirmBtn.interactable = false;
+        if (GameControl.gameControl.popcornCount >= cost)
+            confirmBtn.interactable = true;
     }
 
     

@@ -35,7 +35,6 @@ public class GameController : MonoBehaviour
     void Update()
     {
         
-
         if (gameTimer <= 0 && gameTimer > -99)
         {
             //jävla fusklösning på hur man ska få detta kommando att sluta utföras, vi vill bara kalla detta en gång så gameTimer måste sättas till något som gör if()-statement false
@@ -61,7 +60,6 @@ public class GameController : MonoBehaviour
             }
         }
         
-
     }
 
 
@@ -102,7 +100,10 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
-
+    public void PopcornPlease()
+    {
+        GameControl.gameControl.UpdatePopcornCount(150);
+    }
 
 
 

@@ -26,7 +26,10 @@ public class GameControl : MonoBehaviour
             Destroy(gameObject);
 
     }
-
+   
+    public void PopcornPlease() {
+        UpdatePopcornCount(150);
+    }
     public void UpdatePopcornCount(int popcorn) {
         popcornCount += popcorn;
         Save();
