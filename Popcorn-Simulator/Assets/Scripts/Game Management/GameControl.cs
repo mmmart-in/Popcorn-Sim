@@ -75,10 +75,10 @@ public class GameControl : MonoBehaviour
     private void GetScenariosUnlocked() {
         scenarioControl = FindObjectOfType<ScenarioControl>();
 
-        if (SaveSystem.LoadPlayer().scenariosUnlocked != null)
-            scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
+        if (SaveSystem.LoadPlayer().scenariosUnlocked == null || SaveSystem.LoadPlayer().scenariosUnlocked.Length != ScenarioControl.scenarioControlInstance.scenarios.Length)
+            scenariosUnlocked = new bool[] { true, false, false, false };       
         else
-            scenariosUnlocked = new bool[] { true, false, false, false };
+            scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
 
     }
 }

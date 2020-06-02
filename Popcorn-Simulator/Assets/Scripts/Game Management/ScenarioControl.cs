@@ -14,10 +14,6 @@ public class ScenarioControl : MonoBehaviour
     }
     public void UpdateUnlocks(bool[] scenariosUnlocked)
     {
-        for(int i = 0; i < scenariosUnlocked.Length; i ++)
-            Debug.Log(scenariosUnlocked[i]);
-
-
         for (int i = 0; i < scenarios.Length; i++)
         {
                 scenarios[i].GetComponent<Button>().interactable = scenariosUnlocked[i];
