@@ -27,9 +27,6 @@ public class GameControl : MonoBehaviour
 
     }
    
-    public void PopcornPlease() {
-        UpdatePopcornCount(150);
-    }
     public void UpdatePopcornCount(int popcorn) {
         popcornCount += popcorn;
         Save();
