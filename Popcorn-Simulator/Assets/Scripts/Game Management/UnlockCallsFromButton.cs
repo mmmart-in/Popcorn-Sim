@@ -12,7 +12,7 @@ public class UnlockCallsFromButton : MonoBehaviour
    
     public void UnlockPark() {
         cost = 200;
-        lvlNum = 1;
+        lvlNum = 0;
         if (coroutine == null)
             coroutine = StartCoroutine(PlayerChoice());
         
@@ -20,14 +20,14 @@ public class UnlockCallsFromButton : MonoBehaviour
 
     public void UnlockBeach() {
         cost = 300;
-        lvlNum = 2;
+        lvlNum = 1;
         if(coroutine == null)
             coroutine = StartCoroutine(PlayerChoice());
 
     }
     public void UnlockMoon() {
         cost = 450;
-        lvlNum = 3;
+        lvlNum = 2;
         if (coroutine == null)
             StartCoroutine(PlayerChoice());
     }

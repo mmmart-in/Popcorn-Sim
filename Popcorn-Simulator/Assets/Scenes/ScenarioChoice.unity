@@ -298,23 +298,23 @@ PrefabInstance:
     - target: {fileID: 5606758226230991148, guid: ac3641025a16ec545afc6fd372c3b1ea,
         type: 3}
       propertyPath: scenarios.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5606758226230991148, guid: ac3641025a16ec545afc6fd372c3b1ea,
         type: 3}
       propertyPath: scenarios.Array.data[0]
       value: 
-      objectReference: {fileID: 224972359}
+      objectReference: {fileID: 1552941409}
     - target: {fileID: 5606758226230991148, guid: ac3641025a16ec545afc6fd372c3b1ea,
         type: 3}
       propertyPath: scenarios.Array.data[1]
       value: 
-      objectReference: {fileID: 1552941409}
+      objectReference: {fileID: 1844929853}
     - target: {fileID: 5606758226230991148, guid: ac3641025a16ec545afc6fd372c3b1ea,
         type: 3}
       propertyPath: scenarios.Array.data[2]
       value: 
-      objectReference: {fileID: 1844929853}
+      objectReference: {fileID: 6253363615681608619}
     - target: {fileID: 5606758226230991148, guid: ac3641025a16ec545afc6fd372c3b1ea,
         type: 3}
       propertyPath: scenarios.Array.data[3]
@@ -1420,6 +1420,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HomeSweetHome
       objectReference: {fileID: 0}
+    - target: {fileID: 3808815557575373132, guid: 13dded4223eb159479133b0a3d89a452,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3808815557575373133, guid: 13dded4223eb159479133b0a3d89a452,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1633,6 +1638,11 @@ PrefabInstance:
     - target: {fileID: 8310880061339599253, guid: ce7125d8fe3a41143bd980d701a7435e,
         type: 3}
       propertyPath: scenarios.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310880061339599253, guid: ce7125d8fe3a41143bd980d701a7435e,
+        type: 3}
+      propertyPath: scenariosUnlocked.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8310880061339599253, guid: ce7125d8fe3a41143bd980d701a7435e,

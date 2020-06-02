@@ -16,11 +16,14 @@ public class GameControl : MonoBehaviour
 
     void Awake()
     {
-       
-        if (SaveSystem.LoadPlayer() == null)
-            Save();
-        else
+        Debug.Log(Application.persistentDataPath);
+        if (SaveSystem.LoadPlayer() != null)
+        {
             Load();
+        }
+        else
+            CreateSaveFile();
+
 
         if (gameControl == null)
         {
@@ -30,6 +33,7 @@ public class GameControl : MonoBehaviour
         else if (gameControl != this)
             Destroy(gameObject);
 
+        scenarioControl = FindObjectOfType<ScenarioControl>();
     }
    
     public void UpdatePopcornCount(int popcorn) {
@@ -57,7 +61,7 @@ public class GameControl : MonoBehaviour
     }
 
 
-
+    
     public void Save() {
         SaveSystem.SaveData(new SaveDataContainer(popcornCount, scenariosUnlocked));
         Debug.Log("Saved");
@@ -81,11 +85,19 @@ public class GameControl : MonoBehaviour
     private void GetScenariosUnlocked() {
         scenarioControl = FindObjectOfType<ScenarioControl>();
 
-        if (SaveSystem.LoadPlayer().scenariosUnlocked != null || SaveSystem.LoadPlayer().scenariosUnlocked.Length != ScenarioControl.scenarioControlInstance.scenarios.Length)
+        /*if (SaveSystem.LoadPlayer().scenariosUnlocked != null || SaveSystem.LoadPlayer().scenariosUnlocked.Length != ScenarioControl.scenarioControlInstance.scenarios.Length)
             scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
         else
-            scenariosUnlocked = new bool[] { true, false, false, false };
-        
-
+            scenariosUnlocked = new bool[] { true, false, false, false };*/
+       
+        if (SaveSystem.LoadPlayer().scenariosUnlocked == null)
+            scenariosUnlocked = new bool[] { false, false, false};
+        else
+            scenariosUnlocked = SaveSystem.LoadPlayer().scenariosUnlocked;
+     
     }
+    private void CreateSaveFile() {
+        SaveSystem.SaveData(new SaveDataContainer(0, scenariosUnlocked));
+    }
+
 }
