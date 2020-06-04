@@ -4,7 +4,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public static AudioClip popcorn, wind, burnedPopcorn, burntCatch, gold, yay, timer, gameOver;
+    public static AudioClip popcorn, wind, burnedPopcorn, burntCatch, gold, yay, timer, gameOver, bu, bd;
     static AudioSource audSrc;
 
     void Start()
@@ -19,6 +19,8 @@ public class SoundManager : MonoBehaviour
         timer = Resources.Load<AudioClip>("TIMER");
         gold = Resources.Load<AudioClip>("gold");
         gameOver = Resources.Load<AudioClip>("gameOver");
+        bu = Resources.Load<AudioClip>("ButtonUp");
+        bd = Resources.Load<AudioClip>("ButtonDown");
     }
 
     public static void PlaySound(string clip)
@@ -58,6 +60,14 @@ public class SoundManager : MonoBehaviour
             case "gameOver":
                 //audSrc.pitch = Random.Range(0.8f, 1f);
                 audSrc.PlayOneShot(gameOver, 1.5f);
+                break;
+            case "bu":
+                //audSrc.pitch = Random.Range(0.8f, 1f);
+                audSrc.PlayOneShot(bu, 1.5f);
+                break;
+            case "bd":
+                //audSrc.pitch = Random.Range(0.8f, 1f);
+                audSrc.PlayOneShot(bd, 1.5f);
                 break;
 
 

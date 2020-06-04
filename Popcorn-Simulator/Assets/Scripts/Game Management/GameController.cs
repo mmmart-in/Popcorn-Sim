@@ -93,11 +93,13 @@ public class GameController : MonoBehaviour
 
     public void PlayAgain()
     {
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToMenu()
     {
+        
         SceneManager.LoadScene("Main Menu");
     }
     public void PopcornPlease()

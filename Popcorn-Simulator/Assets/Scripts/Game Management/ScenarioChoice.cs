@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ScenarioChoice : MonoBehaviour
 {
     public void BackToScenarioChoice() {
+        
         GameControl.gameControl.UpdatePopcornCount();
         SceneManager.LoadScene("ScenarioChoice");
     }
